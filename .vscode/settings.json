@@ -1,0 +1,23 @@
+{
+    "liveSassCompile.settings.formats":[
+       {
+           "format": "expanded",
+           "extensionName": ".css",
+           "savePath": "/docker_env/htdocs/php_form/assets/css"
+       },
+       {
+           "extensionName": ".min.css",
+           "format": "compressed",
+           "savePath": "/docker_env/htdocs/php_form/assets/css"
+       }
+   ],
+   "liveSassCompile.settings.excludeList": [
+      "**/node_modules/**",
+      ".vscode/**"
+   ],
+   "liveSassCompile.settings.generateMap": true,
+   "liveSassCompile.settings.autoprefix": [
+       "> 1%",
+       "last 2 versions"
+   ]
+}
