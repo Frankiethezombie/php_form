@@ -23,16 +23,16 @@
                 <form action="#" method="post" class="col-xs-12 col-lg-10" id="form">
                     
                     <div class="row justify-content-center" id="content">
-                        <input type="text" name="fname" placeholder="first name" class="col-xs-12">
-                        <input type="text" name="lname" placeholder="last name" class="col-xs-12">
+                        <input type="text" name="fname" placeholder="first name" class="col-10">
+                        <input type="text" name="lname" placeholder="last name" class="col-10">
                     </div>
                     
                     <div class="row justify-content-center" id="content">
-                        <input type="email" name="mail" placeholder="email@mailexample.com" class="col-xs-12">
+                        <input type="email" name="mail" placeholder="email@mailexample.com" class="col-10">
                     </div>
                     
                     <div class="row justify-content-center" id="content">
-                        <select name="Country" class="col-xs-12">
+                        <select name="Country" class="col-10">
                             <option value="Belgium">Belgium</option>
                             <option value="Luxemburg">Luxemburg</option>
                             <option value="France">France</option>
@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="row justify-content-center" id="content">
-                        <select name="subject" placeholder="problem category" class="col-xs-12">
+                        <select name="subject" placeholder="problem category" class="col-10">
                             <option value="broken">My package arrived damaged</option>
                             <option value="missing">My package is missing</option>
                             <option value="other">Other</option>
