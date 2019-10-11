@@ -1,3 +1,30 @@
+<?php 
+
+$_POST["lname"] = filter_var($_POST["lname"],FILTER_SANITIZE_STRING,FILTER_FLAG_STRIP_HIGH | FILTER_FLAG_STRIP_LOW);
+//if (!preg_match("/^[a-zA-Z ]$/", $_POST["lname"]))
+//{ $_POST["lname"] = ""; } 
+
+$_POST["fname"] = filter_var($_POST["fname"],FILTER_SANITIZE_STRING,FILTER_FLAG_STRIP_HIGH | FILTER_FLAG_STRIP_LOW);
+//if (!preg_match("/^[a-zA-Z ]$/", $_POST["fname"])) 
+//{ $_POST["fname"] = "error";} 
+
+$_POST["mail"] = filter_var($_POST["mail"], FILTER_SANITIZE_EMAIL); 
+if (!filter_var($_POST["mail"], FILTER_VALIDATE_EMAIL))
+{ $_POST["mail"] = ""; } 
+
+//$_POST["message"] = preg_replace("/<script(?:.*?)</script>/", "", $_POST["message"]);
+
+$Fname = $_POST["fname"]; 
+$Lname = $_POST["lname"];
+$Mail = $_POST["mail"];
+$Country = $_POST["country"];
+$Gender = $_POST["gender"];
+$Subject = $_POST["subject"];
+$Message = $_POST["message"];
+
+?>
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -25,7 +52,22 @@
             </header>
 
             <div class="row justify-content-center">
-                <p>sent</p> 
+
+            <article class="col-xs-12 col-lg-10" id="form">
+                <div class="row justify-content-center" id="content">
+                    <p>sent: 
+                        <?php 
+                        print_r ($Fname);
+                        ?>
+                    </p> 
+                    
+                </div>
+
+                <div class="row justify-content-center" id="content">
+                    <p><?php print_r ($Mail); ?></p>
+                </div>
+            </article>
+
             </div>
         </div>
 
