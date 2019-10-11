@@ -55,16 +55,13 @@ $Message = $_POST["message"];
 
             <article class="col-xs-12 col-lg-10" id="form">
                 <div class="row justify-content-center" id="content">
-                    <p>sent: 
-                        <?php 
-                        print_r ($Fname);
-                        ?>
+                    <p id="result">Your complaint has been received!
                     </p> 
                     
                 </div>
 
                 <div class="row justify-content-center" id="content">
-                    <p><?php print_r ($Mail); ?></p>
+                    <p id="mailsent"> A confirmation email has been sent to: <?php print_r ($Mail); ?></p>
                 </div>
             </article>
 
