@@ -1,5 +1,5 @@
 ## Hackers Poulette - exercise
-  objective: create a form using php for a fictive company (3days).
+  objective: create a form using php for a fictive company (3days). Made @BeCode Central
   
 ### The project must
   * have semantical HTML
